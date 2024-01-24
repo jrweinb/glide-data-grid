@@ -1,6 +1,6 @@
 import type { EditableGridCell, GridCell, GridSelection, Item, DataEditorRef } from "@glideapps/glide-data-grid";
 
-import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useReducer, useRef, useState, type RefObject } from "react";
 
 interface Edit {
     cell: Item;
@@ -105,7 +105,7 @@ function reducer(state: ReducerState, action: Action) {
 }
 
 export function useUndoRedo(
-    gridRef: React.RefObject<DataEditorRef>,
+    gridRef: RefObject<DataEditorRef>,
     getCellContent: (cell: Item) => GridCell,
     onCellEdited: (cell: Item, newValue: EditableGridCell) => void,
     onGridSelectionChange?: (newVal: GridSelection) => void

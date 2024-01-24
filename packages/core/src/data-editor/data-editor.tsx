@@ -3660,6 +3660,7 @@ const DataEditorImpl: React.ForwardRefRenderFunction<DataEditorRef, DataEditorPr
                 }
                 return gridRef.current?.damage(damageList);
             },
+            scrollRef: scrollRef,
             getBounds: (col, row) => {
                 if (canvasRef?.current === null || scrollRef?.current === null) {
                     return undefined;
