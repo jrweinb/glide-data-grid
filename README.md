@@ -21,7 +21,7 @@
 
 # 👩‍💻 Demo and features
 
-Lots of fun examples are in our [Storybook](https://glideapps.github.io/glide-data-grid).
+Lot's of fun examples are in our [Storybook](https://quicktype.github.io/glide-data-grid).
 
 You can also visit our [main site](https://grid.glideapps.com).
 
@@ -30,7 +30,7 @@ You can also visit our [main site](https://grid.glideapps.com).
 -   **It scales to millions of rows**. Cells are rendered lazily on demand for memory efficiency.
 -   **Scrolling is extremely fast**. Native scrolling keeps everything buttery smooth.
 -   **Supports multiple types of cells**. Numbers, text, markdown, bubble, image, drilldown, uri
--   **Fully Free & Open Source**. [MIT licensed](LICENSE), so you can use Grid in commercial projects.
+-   **Fully Free & Open Source**. [MIT licensed](LICENSE) so you can use Grid in commerical projects.
 -   **Editing is built in**.
 -   **Resizable and movable columns**.
 -   **Variable sized rows**.
@@ -102,21 +102,19 @@ function getData([col, row]: Item): GridCell {
 }
 ```
 
-You can [edit this example live](https://codesandbox.io/s/glide-data-grid-template-ydvnnk) on CodeSandbox
-
 ## Full API documentation
 
-The full [API documentation is on the main site](https://docs.grid.glideapps.com/)
+The full [API documentation is on the main site](https://grid.glideapps.com/docs/index.html).
 
 # 📒 FAQ
 
 **Nothing shows up!**
 
-Please read the [Prerequisites section in the docs](packages/core/API.md).
+Please read the [Prerequisites section in the docs](API.md).
 
 **It crashes when I try to edit a cell!**
 
-Please read the [Prerequisites section in the docs](packages/core/API.md).
+Please read the [Prerequisites section in the docs](API.md).
 
 **Does it work with screen readers and other a11y tools?**
 
@@ -130,7 +128,7 @@ Data Grid is agnostic about the way you load/store/generate/mutate your data. Wh
 
 **Does it do sorting, searching, and filtering?**
 
-Search is included. You provide the trigger, we do the search. [Example](https://glideapps.github.io/glide-data-grid/?path=/story/glide-data-grid-docs--search) in our storybook.
+Search is included. You provide the trigger, we do the search. [Example](https://quicktype.github.io/glide-data-grid/?path=/story/glide-data-grid-docs--search) in our storybook.
 
 Filtering and sorting are something you would have to implement with your data source. There are hooks for adding column header menus if you want that.
 
@@ -142,7 +140,7 @@ Yes!
 
 **Can I render my own cells?**
 
-Yes, but the renderer has to use HTML Canvas. [Simple example](https://glideapps.github.io/glide-data-grid/?path=/story/glide-data-grid-dataeditor-demos--draw-custom-cells) in our Storybook.
+Yes, but the renderer has to use HTML Canvas. [Simple example](https://quicktype.github.io/glide-data-grid/?path=/story/glide-data-grid-dataeditor-demos--draw-custom-cells) in our Storybook.
 
 **Why does Data Grid use HTML Canvas?**
 
@@ -150,7 +148,7 @@ Originally we had implemented our Grid using virtualized rendering. We virtualiz
 
 There are some hacks you can do like setting timers and entering into a "low fidelity" rendering mode where you only render a single element per cell. This works okay until you want to show hundreds of cells and you are right back to choppy scrolling. It also doesn't really look or feel great.
 
-**I want to use this with Next.js / Vercel, but I'm getting weird errors**
+**I want to use this with Next.js / Vercel but I'm getting weird errors**
 
 The easiest way to use the grid with Next is to create a component which wraps up your grid and then import it as a dynamic.
 
